@@ -1,0 +1,536 @@
+/* Body Styles */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/bg3.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1; /* Tempatkan lapisan yang di-blur di belakang konten */
+}
+
+body {
+    background: url('/img/bg3.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.brand {
+    color: #FF9138;
+}
+
+.border-hover {
+    border-top: 5px solid transparent;
+    transform: translateY(-4px);
+}
+
+.border-hover:hover {
+    border-top: 5px solid #ff9138;
+    transform: translateY(-4px);
+}
+
+#sign-in {
+    background: #FF9138;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.navbar-toggler {
+    border: 3px solid #FF9138;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url(/static_files/svgs3/list.svg)
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#nav-length {
+    width: 90%;
+}
+
+@media screen and (max-width : 992px) {
+    #nav-length {
+        width: 100%;
+    }
+
+    .border-hover {
+        border-top: 0;
+    }
+
+    .border-hover:hover {
+        border-top: 0;
+    }
+
+    #sign-in {
+        border-radius: 50px;
+    }
+}
+
+/* body section */
+.icon-height {
+    height: 28px;
+    width: 28px;
+}
+
+.icon-container {
+    background: #FF9138;
+}
+
+.dark-background {
+    background: #2b3944;
+}
+#socialWrap {
+    border-radius: 0px 24px 24px 0px;
+}
+
+/* public/css/styles.css */
+
+.form-container {
+    background-color: #fff;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-signin {
+    text-align: center;
+}
+
+.form-signin h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-signin label {
+    font-weight: bold;
+}
+
+.form-signin input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-signin button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-signin button:hover {
+    background-color: #c82333;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.register-link {
+    margin-top: 20px;
+    display: block;
+}
+
+.register-link a {
+    color: #007bff;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    text-align: center;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* public/css/styles.css */
+
+.form-signin h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Warna teks diubah menjadi putih */
+}
+
+.form-signin small {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff; /* Warna teks diubah menjadi putih */
+}
+
+.forgot-password a,
+.register-link a {
+    color: #007bff; /* Warna teks link tetap biru agar terlihat seperti tautan */
+    text-decoration: none; /* Menghilangkan garis bawah standar dari tautan */
+    transform: none;
+}
+
+.forgot-password a:hover,
+.register-link a:hover {
+    color: #0056b3; /* Warna teks link berubah menjadi lebih gelap saat dihover */
+}
+
+
+
+/* public/css/styles.css */
+
+.form-registration {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-registration h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Warna teks diubah menjadi merah */
+}
+
+.form-registration label {
+    font-weight: bold;
+}
+
+.form-registration input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-registration button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-registration button:hover {
+    background-color: #c82333;
+}
+
+.form-registration small {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff; /* Warna teks diubah menjadi merah */
+}
+
+.form-registration a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-registration a:hover {
+    color: #0056b3;
+}
+
+
+/*-------------------------------------
+        6. New-cars
+--------------------------------------*/
+.new-cars {
+    background: rgba(255, 255, 255, 0.788);
+    padding: 112px 0 120px;
+    height: 125vh;
+    border-radius: 30px; /* Sesuaikan nilai border-radius sesuai keinginan Anda */
+}
+
+.new-cars-content{padding-top:96px;}
+/*.new-cars-txt*/
+.new-cars-txt {margin-left: 29px;margin-bottom: 30px;}
+.new-cars-txt h2 a {
+    font-size:  30px;
+    font-weight:  500;
+    margin-bottom: 26px;
+}
+.new-cars-txt h2 a span {text-transform:  uppercase;}
+.new-cars-para2 p {margin-top: 30px;}
+.welcome-btn.new-cars-btn {
+    width: 176px;
+    margin-top: 32px;
+}
+/*.new-cars-txt*/
+
+/*.owl-dots */
+.new-cars .owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 0px 4px;
+    background: transparent;
+    border: 1px solid #6a7781;
+    border-radius: 50%;
+}
+.new-cars .owl-theme .owl-dots .owl-dot.active span,.new-cars .owl-theme .owl-dots .owl-dot:hover span {background: #6a7781;}
+.new-cars .owl-theme .owl-nav.disabled+.owl-dots {margin-top: 62px;}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color:#000000;
+    text-transform:initial;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #000000;
+	font-size:20px;
+	padding:0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.new-cars-txt h2 {
+    font-weight: bold;
+    color:#000000;
+    font-size:25px;
+    line-height: 1.8;
+    text-transform: initial;
+ }
+ .new-cars-txt p {
+    color:#000000;
+    font-size:16px;
+    line-height: 1.8;
+    text-transform: initial;
+ }
+
+ .p-3 p {
+    color:#ffffff;
+    font-size:16px;
+    line-height: 1.8;
+    text-transform: initial;
+ }
+ .mb-3 p {
+    color:#ffffff;
+    font-size:16px;
+    line-height: 1.8;
+    text-transform: initial;
+ }
+
+ .section-header h2, p {
+    font-weight: bold;
+    color:#000000;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+ }
+ 
+h1, h2,h3,h4,h5,h6 { 
+	margin: 0;
+	color:#ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.welcome-btn {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 55px;
+    -webkit-transition: .3s linear; 
+    -moz-transition:.3s linear; 
+    -ms-transition:.3s linear; 
+    -o-transition:.3s linear;
+    transition: .3s linear;
+}
+.welcome-btn:hover{
+    background: #0102fa;
+}
+.welcome-btn.new-cars-btn {
+    width: 176px;
+    margin-top: 32px;
+}
+/* section-header */
+.section-header{
+    position: relative;
+    text-align: center;
+}
+.section-header h2{
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 35px;
+}
+.section-header h2:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -42px;
+    background: #4e4ffa;
+}
+.section-header p{color: #444a57;text-transform: capitalize;margin-bottom:10px;}
+.section-header h2 span,.section-header p span{text-transform: lowercase;}
+
+/* section-header */
+
+/* style.css */
+
+/* Contact Us Section Styles */
+.contact-us {
+    background: #f9f9f900;
+    padding: 0px 0;
+}
+
+.image-container-vespa
+{
+    background: #f9f9f9cb;
+    border-radius: 15px;
+}
+
+.contact-us .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-us .row {
+    margin-top: 40px;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd00;
+    border-radius: 5px;
+}
+
+.contact-us-form button {
+    background: #dc3545;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us-form button:hover {
+    background: #ffffff;
+}
+
+/* Style for the contact info section */
+.contact-info {
+    padding: 10px 0; /* Padding bagian atas dan bawah */
+    color: #fff; /* Warna teks */
+}
+
+.single-info {
+    margin-bottom: 30px; /* Jarak antar elemen */
+    text-align: center; /* Pusatkan teks */
+    padding: 30px; /* Padding internal */
+    background-color: #dc3545;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Efek transisi */
+}
+
+.single-info i {
+    font-size: 30px; /* Ukuran ikon */
+    color: #ffffff; /* Warna ikon */
+}
+
+.single-info h3, p {
+    font-size: 18px; /* Ukuran judul */
+    color: #ffffff;
+    margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+}
+
+/* Hover effect for the entire single-info block */
+.single-info:hover {
+    transform: translateY(-5px); /* Geser elemen ke atas saat dihover */
+}
+
+/* Hover effect for icons */
+.single-info i:hover {
+    color: #ff9900; /* Warna ikon berubah saat dihover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .single-info {
+        margin-bottom: 20px; /* Jarak antar elemen pada layar kecil */
+    }
+}
